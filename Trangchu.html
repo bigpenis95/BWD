@@ -1,35 +1,500 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
     <!-- https://cdnjs.com/libraries/twitter-bootstrap/5.0.0-beta1 -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css"
-    />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css" />
 
     <!-- Icons: https://getbootstrap.com/docs/5.0/extend/icons/ -->
     <!-- https://cdnjs.com/libraries/font-awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 
     <title>Hello, world!</title>
-  </head>
-  <body class="d-flex vw-100 vh-100 align-items-center justify-content-center">
-    <button class="btn btn-primary">
-      <i class="fab fa-accessible-icon me-1"></i>Hello, world!
-    </button>
+</head>
+<body">
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="wrap-logo">
+                    <a href="" class="wrap-logo-link">
+                        <img src="./assets/img/logocode.png" alt="" class="wrap-logo-img">
+                    </a>
+                </div>
+                <div class="wrap-right-header">
+                    <div class="site-menu">
+                        <ul class="menu-list">
+                            <li class="menu-item">
+                                <a href="" class="menu-link">Learn</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="" class="menu-link">Training</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="" class="menu-link">Learn</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="" class="menu-link">Fights</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="" class="menu-link">Challenge</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="" class="menu-link">Disscusion</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="" class="menu-link">Game</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="header__navbar-item header__navbar-user">
+                        <img src="./assets/img/avt.jpg" alt="" class="header__navbar-user-img">
+                        <span class="header__navbar-user-name">Thiên Trang</span>
+
+                        <ul class="header__navbar-user-menu">
+                            <li class="header__navbar-user-item">
+                                <a href="">Tài khoản của tôi</a>
+                            </li>
+                            <li class="header__navbar-user-item">
+                                <a href="">Quản lý bài tập</a>
+                            </li>
+                            <li class="header__navbar-user-item header__navbar-user-item--separate">
+                                <a href="">Đăng xuất</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container grid wide">
+        <div class="row">
+            <div id="carouselExampleIndicators" class="carousel slide col-12 slide2" data-bs-ride="carousel">
+                <div class="carousel-inner h-100">
+                    <div class="carousel-item h-100 active">
+                        <img src="./assets/img/1200x628-4-.png" class="d-block w-100 h-100" alt="...">
+                    </div>
+                    <div class="carousel-item h-100">
+                        <img src="./assets/img/lap-trinh-web-php-mysql.png" class="d-block w-100 h-100" alt="...">
+                    </div>
+                    <div class="carousel-item h-100">
+                        <img src="./assets/img/Banner_laptrinh.net_-01.png" class="d-block w-100 h-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <h3 class="course-heading">
+            Khóa học
+        </h3>
+        <div class="course-content">
+            <div class="course-category course-category-active">
+                Khóa học gợi ý
+            </div>
+            <div class="course-category">
+                Đang học (2)
+            </div>
+            <div class="course-category">
+                Đã hoàn thành (7)
+            </div>
+        </div>
+
+        <div class="row course-container">
+
+            <div class="col-lg-3">
+                <a class="course-item" href="">
+                    <div class="course-item__img"
+                        style="background-image: url(https://laptrinhvb.net/uploads/source/devexpress/python_learning.jpg);">
+                    </div>
+                    <h4 class="course-item__name">Python cơ bản</h4>
+                    <div class="course-note">Khóa học lập trình Python cơ bản với các bài tập và lý thuyết dễ hiểu, học
+                        xong bạn có thể tự tin để tới với các chủ đề nâng cao hơn của Python.</div>
+                    <div class="course-info">
+                        <span class="course-count">
+                            <i class="fas fa-desktop"></i>
+                            59
+                        </span>
+                        <span class="course-time">
+                            <i class="fas fa-clock"></i>
+                            26:00:00
+                        </span>
+
+                        <input type="button" class="course-btn" value="Học Ngay">
+                    </div>
+                    <div class="course-item__favourite">
+                        <i class="fas fa-check"></i>
+                        <span>Yêu thích</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-3">
+                <a class="course-item" href="">
+                    <div class="course-item__img"
+                        style="background-image: url(https://laptrinhvb.net/uploads/source/devexpress/python_learning.jpg);">
+                    </div>
+                    <h4 class="course-item__name">Python cơ bản</h4>
+                    <div class="course-note">Khóa học lập trình Python cơ bản với các bài tập và lý thuyết dễ hiểu, học
+                        xong bạn có thể tự tin để tới với các chủ đề nâng cao hơn của Python.</div>
+                    <div class="course-info">
+                        <span class="course-count">
+                            <i class="fas fa-desktop"></i>
+                            59
+                        </span>
+                        <span class="course-time">
+                            <i class="fas fa-clock"></i>
+                            26:00:00
+                        </span>
+
+                        <input type="button" class="course-btn" value="Học Ngay">
+                    </div>
+                    <div class="course-item__favourite">
+                        <i class="fas fa-check"></i>
+                        <span>Yêu thích</span>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-3">
+                <a class="course-item" href="">
+                    <div class="course-item__img"
+                        style="background-image: url(https://laptrinhvb.net/uploads/source/devexpress/python_learning.jpg);">
+                    </div>
+                    <h4 class="course-item__name">Python cơ bản</h4>
+                    <div class="course-note">Khóa học lập trình Python cơ bản với các bài tập và lý thuyết dễ hiểu, học
+                        xong bạn có thể tự tin để tới với các chủ đề nâng cao hơn của Python.</div>
+                    <div class="course-info">
+                        <span class="course-count">
+                            <i class="fas fa-desktop"></i>
+                            59
+                        </span>
+                        <span class="course-time">
+                            <i class="fas fa-clock"></i>
+                            26:00:00
+                        </span>
+
+                        <input type="button" class="course-btn" value="Học Ngay">
+                    </div>
+                    <div class="course-item__favourite">
+                        <i class="fas fa-check"></i>
+                        <span>Yêu thích</span>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-3">
+                <a class="course-item" href="">
+                    <div class="course-item__img"
+                        style="background-image: url(https://laptrinhvb.net/uploads/source/devexpress/python_learning.jpg);">
+                    </div>
+                    <h4 class="course-item__name">Python cơ bản</h4>
+                    <div class="course-note">Khóa học lập trình Python cơ bản với các bài tập và lý thuyết dễ hiểu, học
+                        xong bạn có thể tự tin để tới với các chủ đề nâng cao hơn của Python.</div>
+                    <div class="course-info">
+                        <span class="course-count">
+                            <i class="fas fa-desktop"></i>
+                            59
+                        </span>
+                        <span class="course-time">
+                            <i class="fas fa-clock"></i>
+                            26:00:00
+                        </span>
+
+                        <input type="button" class="course-btn" value="Học Ngay">
+                    </div>
+                    <div class="course-item__favourite">
+                        <i class="fas fa-check"></i>
+                        <span>Yêu thích</span>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-3">
+                <a class="course-item" href="">
+                    <div class="course-item__img"
+                        style="background-image: url(https://laptrinhvb.net/uploads/source/devexpress/python_learning.jpg);">
+                    </div>
+                    <h4 class="course-item__name">Python cơ bản</h4>
+                    <div class="course-note">Khóa học lập trình Python cơ bản với các bài tập và lý thuyết dễ hiểu, học
+                        xong bạn có thể tự tin để tới với các chủ đề nâng cao hơn của Python.</div>
+                    <div class="course-info">
+                        <span class="course-count">
+                            <i class="fas fa-desktop"></i>
+                            59
+                        </span>
+                        <span class="course-time">
+                            <i class="fas fa-clock"></i>
+                            26:00:00
+                        </span>
+
+                        <input type="button" class="course-btn" value="Học Ngay">
+                    </div>
+                    <div class="course-item__favourite">
+                        <i class="fas fa-check"></i>
+                        <span>Yêu thích</span>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-3">
+                <a class="course-item" href="">
+                    <div class="course-item__img"
+                        style="background-image: url(https://laptrinhvb.net/uploads/source/devexpress/python_learning.jpg);">
+                    </div>
+                    <h4 class="course-item__name">Python cơ bản</h4>
+                    <div class="course-note">Khóa học lập trình Python cơ bản với các bài tập và lý thuyết dễ hiểu, học
+                        xong bạn có thể tự tin để tới với các chủ đề nâng cao hơn của Python.</div>
+                    <div class="course-info">
+                        <span class="course-count">
+                            <i class="fas fa-desktop"></i>
+                            59
+                        </span>
+                        <span class="course-time">
+                            <i class="fas fa-clock"></i>
+                            26:00:00
+                        </span>
+
+                        <input type="button" class="course-btn" value="Học Ngay">
+                    </div>
+                    <div class="course-item__favourite">
+                        <i class="fas fa-check"></i>
+                        <span>Yêu thích</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <h3 class="course-heading">
+            Cuộc thi lập trình
+        </h3>
+
+        <div class="row competition">
+            <div class="col-lg-6">
+                <a class="competition-item" href="">
+                    <div class="competition-item__img"
+                        style="background-image: url(https://youth.neu.edu.vn/Resources/Images/SubDomain/youth/Th%C3%A0nh%20%C4%91o%C3%A0n/206451698_129134922695377_3592028630566800205_n.jpeg);">
+                    </div>
+                    <h4 class="competition-item__name">
+                        FPT TECHDAY 2021_CODE WARS: VÒNG ĐẤU TỰ DO - 03/12/2021
+                    </h4>
+
+                    <div class="competition-item-note">
+                        Bảng thi giành cho mọi đối tượng đam mê lập trình, yêu thích công nghệ
+                        Đăng ký tham gia vui lòng truy cập: https://techday2021.fpt.com.vn/vi/code-war
+                    </div>
+
+                    <div class="competition-item-info">
+                        <div class="competition-item-info-right">
+                            <p>Đã đăng ký 305 người</p>
+                            <div class="competition-item-info-">
+                                Cuộc thi kết thúc ngày 03/12/2021
+                            </div>
+                        </div>
+                        <div class="competition-item-info-left">
+                            <span class="competition-item-info-status">Đã kết thúc</span>
+                        </div>
+                    </div>
+
+                </a>
+            </div>
+
+            <div class="col-lg-6">
+                <a class="competition-item" href="">
+                    <div class="competition-item__img"
+                        style="background-image: url(https://codelearn.io/CodeCamp/CodeCamp/Upload/2d8b1dff79e247e0855ee28e6a61de77.png);">
+                    </div>
+                    <h4 class="competition-item__name">
+                        SASUKE CODE WAR
+                    </h4>
+
+                    <div class="competition-item-note">
+                        Bảng thi giành cho mọi đối tượng đam mê lập trình, yêu thích công nghệ
+                        Đăng ký tham gia vui lòng truy cập: https://techday2021.fpt.com.vn/vi/code-war
+                    </div>
+
+                    <div class="competition-item-info">
+                        <div class="competition-item-info-right">
+                            <p>Đã đăng ký 132 người</p>
+                            <div class="competition-item-info-">
+                                Cuộc thi kết thúc ngày 05/8/2021
+                            </div>
+                        </div>
+                        <div class="competition-item-info-left">
+                            <span class="competition-item-info-status">Đã kết thúc</span>
+                        </div>
+                    </div>
+
+                </a>
+            </div>
+        </div>
+
+        <h4 class="skill_name">
+            KỸ NĂNG CỦA BẠN
+        </h4>
+        <div class="row skill-container">
+            <div class="col-12d5 skill">
+                <img src="https://codelearn.io/Themes/TheCodeCampPro/Resources/Images/assets/languages/Cplus.svg"
+                    alt="">
+                <span>C++</span>
+                <div class="skill-item__rating">
+                    <i class="skill-item__star--gold fas fa-star"></i>
+                    <i class="skill-item__star--gold fas fa-star"></i>
+                    <i class="skill-item__star--gold fas fa-star"></i>
+                    <i class="skill-item__star--gold fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+
+            <div class="col-12d5 skill">
+                <img src="https://codelearn.io/Themes/TheCodeCampPro/Resources/Images/assets/languages/Java.svg" alt="">
+                <span>java</span>
+                <div class="skill-item__rating">
+                    <i class="skill-item__star--gold fas fa-star"></i>
+                    <i class="skill-item__star--gold fas fa-star"></i>
+                    <i class="skill-item__star--gold fas fa-star"></i>
+                    <i class="skill-item__star--gold fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+
+            <div class="col-12d5 skill">
+                <img src="https://codelearn.io/Themes/TheCodeCampPro/Resources/Images/assets/languages/Csharp.svg"
+                    alt="">
+                <span>C#</span>
+                <div class="skill-item__rating">
+                    <i class="skill-item__star--gold fas fa-star"></i>
+                    <i class="skill-item__star--gold fas fa-star"></i>
+                    <i class="skill-item__star--gold fas fa-star"></i>
+                    <i class="skill-item__star--gold fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+
+            <div class="col-12d5 skill">
+                <img src="https://codelearn.io/Themes/TheCodeCampPro/Resources/Images/assets/languages/JS.svg" alt="">
+                <span>JavaScript</span>
+                <div class="skill-item__rating">
+                    <i class="skill-item__star--gold fas fa-star"></i>
+                    <i class="skill-item__star--gold fas fa-star"></i>
+                    <i class="skill-item__star--gold fas fa-star"></i>
+                    <i class="skill-item__star--gold fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+
+            <div class="col-12d5 skill">
+                <img src="https://codelearn.io/Themes/TheCodeCampPro/Resources/Images/assets/languages/Python.svg"
+                    alt="">
+                <span>Python2</span>
+                <div class="skill-item__rating">
+                    <i class="skill-item__star--gold fas fa-star"></i>
+                    <i class="skill-item__star--gold fas fa-star"></i>
+                    <i class="skill-item__star--gold fas fa-star"></i>
+                    <i class="skill-item__star--gold fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+
+            <div class="col-12d5 skill">
+                <img src="https://codelearn.io/Themes/TheCodeCampPro/Resources/Images/assets/languages/Python.svg"
+                    alt="">
+                <span>Python3</span>
+                <div class="skill-item__rating">
+                    <i class="skill-item__star--gold fas fa-star"></i>
+                    <i class="skill-item__star--gold fas fa-star"></i>
+                    <i class="skill-item__star--gold fas fa-star"></i>
+                    <i class="skill-item__star--gold fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="wrap-logo">
+                        <a href="" class="wrap-logo-link">
+                            <img src="./assets/img/logocode.png" alt="" class="wrap-logo-img">
+                        </a>
+                    </div><br>
+                    <p>
+                        CodeBook là nền tảng tương tác trực tuyến hỗ trợ người dùng học tập, thực hành, thi đấu và đánh
+                        giá kỹ năng lập trình một cách nhanh chóng và chính xác.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <h5 class="footer-heading">Liên Kết</h5>
+                            <ul class="footer-list">
+                                <li class="footer-item">Học Tập</li>
+                                <li class="footer-item">Luyện tập</li>
+                                <li class="footer-item">Cuộc thi</li>
+                                <li class="footer-item">Trò chơi</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4">
+                            <h5 class="footer-heading">THÔNG TIN</h5>
+                            <ul class="footer-list">
+                                <li class="footer-item">Chia sẻ</li>
+                                <li class="footer-item">Về chúng tôi</li>
+                                <li class="footer-item">Điều khoản sử dụng</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4">
+                            <h5 class="footer-heading">TRỢ GIÚP</h5>
+                            <ul class="footer-list">
+                                <li class="footer-item">Hỗ trợ</li>
+                                <li class="footer-item">Thảo luận</li>
+                                <li class="footer-item">Cuộc thi</li>
+                                <li class="footer-item">Liên hệ với chúng tôi</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
 
@@ -42,5 +507,6 @@
     ></script> -->
 
     <!-- More: https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
-  </body>
+    </body>
+
 </html>
